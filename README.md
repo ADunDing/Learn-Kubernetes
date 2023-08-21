@@ -2,9 +2,14 @@
 SystemOS: Ubuntu 22.04
 
 ## 關閉SWAP
-使用`swapoff -a`關閉SWAP
-
-使用`sudo vim /etc/fstab`檢查設定
+關閉SWAP
+```
+swapoff -a
+```
+檢查/etc/fstab設定
+```
+sudo vim /etc/fstab
+```
 
 確認swap相關設定都被註解掉
 例如最後一行#/swap.img設定
